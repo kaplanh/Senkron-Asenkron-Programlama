@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    font-family: tahoma;
+    height: 100vh;
+    background: linear-gradient(to right, #5e0674, #c0ceee);
+}
+
+.card {
+    & img {
+        transition: 0.5s;
+    }
+
+    & img:hover {
+        rotate: 10deg;
+        scale: 1.02;
+    }
+    & .btn {
+        transition: scale 0.2s;
+    }
+    & .btn:hover {
+        scale: 1.03;
+    }
+}
