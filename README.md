@@ -1,6 +1,6 @@
 
 # Synchronous-Asynchronous-Programming
-/
+
 
 
 ![checkoutpage](https://github.com/kaplanh/Checkout_Page/assets/101884444/5cfce62d-d646-4ca7-8f0c-d7a58be1d7b3)
