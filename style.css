@@ -2,7 +2,8 @@ body {
     text-align: center;
     font-family: tahoma;
     height: 100vh;
-    background: linear-gradient(to right, #5e0674, #c0ceee);
+    background-color:#c0ceee ;
+    /* background: linear-gradient(to right, #5e0674, #c0ceee); */
 }
 
 .card {
