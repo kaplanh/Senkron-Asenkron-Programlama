@@ -4,7 +4,7 @@
 
 | What's used in this app ? | How to run ? |
 | ----------- | ----------- |
-| Javascript
+| Javascript | open index.html with Go Live in vs code|
 Css 
 Bootstrap 
 Html 
