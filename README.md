@@ -1,8 +1,6 @@
 # Synchronous-Asynchronous-Programming
 
 | What's used in this app ? | How to run ? | Author  |
-
-|- Javascript - Css - Bootstrap - Html - Api-Server | 1.open index.html with Go Live in vs code |
 | Paragraph | Text |
 
 
