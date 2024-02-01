@@ -4,7 +4,7 @@
 
 | What's used in this app ? | How to run ? |
 | ----------- | ----------- |
-| What's used in this app ? | How to run ? |
+| -What's used in this app ? | How to run ? |
 | What's used in this app ? | How to run ? |
 
 
