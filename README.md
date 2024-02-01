@@ -5,14 +5,14 @@
 | Syntax | Description |
 | ----------- | ----------- |
 | Header | Title |
-| Paragraph | Text |
+| What's used in this app ? | How to run ? |
 
 
 
 
 ![image](https://github.com/kaplanh/Synchronous-Asynchronous-Programming/assets/101884444/58dc98ba-c57b-4635-bff2-53137037d179)
 
-| What's used in this app ? | How to run ? | Author |
+|  |  | Author |
 | ----------- | ----------- |
 | Javascript  | 1.open index.html with Go Live in vs code |
 
