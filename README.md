@@ -4,11 +4,7 @@
 
 | What's used in this app ? | How to run ? |
 | ----------- | ----------- |
-| Javascript
-Css
-Bootstrap
-Html
-Api-Server | How to run ? |
+| Javascript Css Bootstrap Html Api-Server | How to run ? |
 | What's used in this app ? | How to run ? |
 
 
