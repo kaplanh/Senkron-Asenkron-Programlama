@@ -14,7 +14,7 @@
 
 | What's used in this app ? | How to run ? | Author |
 | ----------- | ----------- |
-|- Javascript - Css - Bootstrap - Html - Api-Server | 1.open index.html with Go Live in vs code |
+| Javascript  | 1.open index.html with Go Live in vs code |
 
 
 ![image](https://github.com/kaplanh/Synchronous-Asynchronous-Programming/assets/101884444/37e49132-4cc1-4bb6-855f-2bc7383166cb)
