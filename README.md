@@ -1,5 +1,8 @@
 # Synchronous-Asynchronous-Programming
 
+~~~css
+.button { border: none; }
+~~~
 
 
 | What's used in this app ? | How to run ? |
