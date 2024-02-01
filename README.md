@@ -5,10 +5,10 @@
 | What's used in this app ? | How to run ? |
 | ----------- | ----------- |
 | Javascript | open index.html with Go Live in vs code|
-|Css | ----------- |
-|Bootstrap | ----------- |
-|Html | ----------- |
-|Api-Server| ----------- |
+|Css | |
+|Bootstrap | |
+|Html |  |
+|Api-Server||
 | What's used in this app ? | How to run ? |
 
 
