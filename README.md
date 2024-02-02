@@ -1,10 +1,10 @@
 # Synchronous-Asynchronous-Programming
 **How does my project look**
 
-[Live link!](https://kaplanh.github.io/Synchronous-Asynchronous-Programming/)
 
 ![Video_240201005720](https://github.com/kaplanh/Synchronous-Asynchronous-Programming/assets/101884444/96410212-c860-4320-a0c7-d54dd0a67b62)
 
+[Live link!](https://kaplanh.github.io/Synchronous-Asynchronous-Programming/)
 
 
  **What's used in this app ?** | **How to run ?** | **Author** |
@@ -183,47 +183,46 @@ Synchronous-Asynchronous-Programming(folder)
                      });
                  };
                ```
-        -  async-await
-             ```
-                const getNews = async () => {
-                 const API_KEY = "2108f1dba8114b89b4a326fc6f71a5a8";
-                 const URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
-             
-                 try {
-                     const res = await fetch(URL);
-                     // console.log(res);
-                     //?Error handling
-                     if (!res.ok) {
-                         throw new Error("News can not be fetched");
+        
+       - async-await
+           ```
+            const getNews = async () => {
+                     const API_KEY = "2108f1dba8114b89b4a326fc6f71a5a8";
+                     const URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
+                     try {
+                         const res = await fetch(URL);
+                         // console.log(res);
+                         //?Error handling
+                         if (!res.ok) {
+                             throw new Error("News can not be fetched");
+                         }
+                         const data = await res.json();
+                         renderNews(data.articles);
+                     } catch (err) {
+                         // console.log(error);
+                         renderError(err);
                      }
-                     const data = await res.json();
-                     renderNews(data.articles);
-                 } catch (err) {
-                     // console.log(error);
-                     renderError(err);
-                 }
-             };
-             
-             const renderNews = (news) => {
-                 const newsDiv = document.getElementById("news");
-
-              news.map((item) => {
-                  const { title, content, url, urlToImage } = item; //? destructure
-                  newsDiv.innerHTML += `
-              <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="card">
-                      <img src="${urlToImage}" class="card-img-top img-thumbnail" alt="...">
-                      <div class="card-body">
-                          <h5 class="card-title">${title}</h5>
-                          <p class="card-text">${content}</p>
-                          <a href="${url}" target="_blank" class="btn btn-danger">Go Detail</a>
-                      </div>
-                  </div>
-              </div>
-   
-                       `;
-                       });
                    };
+                   const renderNews = (news) => {
+                       const newsDiv = document.getElementById("news");
+
+                      news.map((item) => {
+                          const { title, content, url, urlToImage } = item; //? destructure
+                          newsDiv.innerHTML += `
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                          <div class="card">
+                              <img src="${urlToImage}" class="card-img-top img-thumbnail" alt="...">
+                              <div class="card-body">
+                                  <h5 class="card-title">${title}</h5>
+                                  <p class="card-text">${content}</p>
+                                  <a href="${url}" target="_blank" class="btn btn-danger">Go Detail</a>
+                              </div>
+                          </div>
+                      </div>
+           
+                               `;
+                               });
+                           };
                    const renderError = (err) => {
                        const newsDiv = document.getElementById("news");
                        newsDiv.innerHTML = `
@@ -234,8 +233,7 @@ Synchronous-Asynchronous-Programming(folder)
                    
                    window.addEventListener("load", () => {
                        getNews();
-                   });
-              ```
+                   });```
       
   
     - DOM Manipulations
@@ -251,8 +249,8 @@ Synchronous-Asynchronous-Programming(folder)
  
  
   
-   - Array Methods
-   - forEach() &  map()
+    - Array Methods
+ - forEach() &  map()
 
      ```
              const showUsers = (users) => {
