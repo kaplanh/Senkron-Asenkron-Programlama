@@ -1,10 +1,11 @@
 # Synchronous-Asynchronous-Programming
 **How does my project look**
 
+[Click Me!](https://kaplanh.github.io/Synchronous-Asynchronous-Programming/)
+
 ![Video_240201005720](https://github.com/kaplanh/Synchronous-Asynchronous-Programming/assets/101884444/96410212-c860-4320-a0c7-d54dd0a67b62)
 
 
-[Click Me!](https://kaplanh.github.io/Synchronous-Asynchronous-Programming/)
 
  **What's used in this app ?** | **How to run ?** | **Author** |
 |----------|---------|------------
@@ -16,41 +17,12 @@
 **What is this project about ?**
 - In this project user can get any current country detail from certain api-server and can find a link which takes the user google map.
 
-~~~css
-.button { border: none; }
-~~~
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Synchronous-Asynchronous-Programming
-
-
-
-
-
-## Description
-
-The project aims to create a Checkout App using JS and Bootstrap.
-
-## Problem Statement
-
-- Your company has recently started on a project that aims to create a Checkout Page. So you and your colleagues have started to work on the project.
 
 ## Project Skeleton 
 
 ```
-Checkout Page (folder)
+Synchronous-Asynchronous-Programming(folder)
 |
 |----readme.md                        
 |----index.html
@@ -61,8 +33,7 @@ Checkout Page (folder)
      |----checkout.css
      |----universal.css
 
-``` 
-
+```
 
 ### At the end of the project, the following topics are to be covered;
 
@@ -167,18 +138,20 @@ Checkout Page (folder)
    productTotalPriceDiv.innerText = (productQuantity * productPrice).toFixed(2);
   ```
 
-    
-
-### At the end of the project, developers will be able to;
-
-- improve coding skills within HTML, CSS and JS 
-
-- use git commands (push, pull, commit, add etc.) and Github as a Version Control System.
 
 
-## Notes
 
-- You can use HTML, CSS and JS to complete this project.
+
+
+~~~css
+.button { border: none; }
+~~~
+
+
+## Feedback and Collaboration
+I value your feedback and suggestions. If you have any comments, questions, or ideas for improvement regarding this project or any of my other projects, please don't hesitate to reach out.
+I'm always open to collaboration and welcome the opportunity to work on exciting projects together.
+Thank you for visiting my project. I hope you have a wonderful experience exploring it, and I look forward to connecting with you soon!
 
 
 
