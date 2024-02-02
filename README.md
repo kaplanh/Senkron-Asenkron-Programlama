@@ -71,7 +71,7 @@ Synchronous-Asynchronous-Programming(folder)
        console.timeEnd("gecikme")
        console.log("hi")
        ```
-        - Asenkron (setTimeout()) programing
+      - Asenkron (setTimeout()) programing
           ```
            setTimeout(() => {
           console.log("I am fine")
