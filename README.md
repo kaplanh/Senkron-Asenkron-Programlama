@@ -1,6 +1,6 @@
 # Synchronous-Asynchronous-Programming
 **How does my project look**
-![Video_240201005720](https://github.com/kaplanh/Synchronous-Asynchronous-Programming/assets/101884444/96410212-c860-4320-a0c7-d54dd0a67b62)
+
 
 
 [Click Me!](https://kaplanh.github.io/Synchronous-Asynchronous-Programming/)
