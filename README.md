@@ -1,5 +1,7 @@
 # Synchronous-Asynchronous-Programming
 
+![image](https://github.com/kaplanh/Synchronous-Asynchronous-Programming/assets/101884444/37e49132-4cc1-4bb6-855f-2bc7383166cb)
+
  **What's used in this app ?** | **How to run ?** | **Author** |
 |----------|---------|------------
 |Css | Once you clone the project|[Take a look at my other projects]()|
@@ -7,30 +9,15 @@
 |Html |  |
 |Api-Server||   
 
+**What is this project about ?**
+- In this project user can get any current country detail from certain api-server and can find a link which takes the user google map.
 
 ~~~css
 .button { border: none; }
 ~~~
 
 
-|  | |
-| ----------- | ----------- |
-| Javascript | open index.html with Go Live in vs code|
 
-| What's used in this app ? | How to run ? |
-
-
-
-> bloknbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-
-![image](https://github.com/kaplanh/Synchronous-Asynchronous-Programming/assets/101884444/58dc98ba-c57b-4635-bff2-53137037d179)
-
-|  |  | Author |
-| ----------- | ----------- |
-| Javascript  | 1.open index.html with Go Live in vs code |
-
-
-![image](https://github.com/kaplanh/Synchronous-Asynchronous-Programming/assets/101884444/37e49132-4cc1-4bb6-855f-2bc7383166cb)
 
 
 
