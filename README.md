@@ -1,7 +1,6 @@
 # Synchronous-Asynchronous-Programming
-
+**How does my project look**
 ![image](https://github.com/kaplanh/Synchronous-Asynchronous-Programming/assets/101884444/37e49132-4cc1-4bb6-855f-2bc7383166cb)
-
  **What's used in this app ?** | **How to run ?** | **Author** |
 |----------|---------|------------
 |Css | Once you clone the project|[Take a look at my other projects]()|
