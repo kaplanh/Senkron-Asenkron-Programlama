@@ -1,4 +1,4 @@
-# Synchronous-Asynchronous-Programming
+# Synchronous-Asynchronous Programming Example
 **How does my project look**
 
 
