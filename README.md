@@ -250,7 +250,7 @@ Synchronous-Asynchronous-Programming(folder)
  
   
     - Array Methods
- - forEach() &  map()
+    - forEach() &  map()
 
      ```
              const showUsers = (users) => {
