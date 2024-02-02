@@ -115,6 +115,7 @@ Synchronous-Asynchronous-Programming(folder)
               }, 1000);
               ```
        - Promise()
+         
              ```
                    const networkReq = new Promise((resolve, reject) => {
                       const data = { a: 1, b: 2 };
@@ -182,7 +183,7 @@ Synchronous-Asynchronous-Programming(folder)
                      });
                  };
                ```
-          -  async-await
+        -  async-await
              ```
                 const getNews = async () => {
                  const API_KEY = "2108f1dba8114b89b4a326fc6f71a5a8";
@@ -236,22 +237,22 @@ Synchronous-Asynchronous-Programming(folder)
                    });
               ```
       
-  - 
-  - DOM Manipulations
-    - innerHTML
-    - innerText
-    - textContent
+  
+    - DOM Manipulations
+      - innerHTML
+      - innerText
+      - textContent
      
-  - DOM Selectors
+    - DOM Selectors
     
-  - Events
-    - click
-    - load
+    - Events
+        - click
+        - load
  
  
   
-  - Array Methods
-  - forEach() &  map()
+   - Array Methods
+   - forEach() &  map()
 
      ```
              const showUsers = (users) => {
