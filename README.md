@@ -1,24 +1,21 @@
 # Synchronous-Asynchronous-Programming
 
- **id** | **name** | **age** | **gender** 
---------|----------|---------|------------
- 1      | Roberta  | 39      | M          
- 2      | Oliver   | 25      | M          
- 3      | Shayna   | 18      | F          
- 4      | Fechin   | 18      | M     
+ **What's used in this app ?** | ** How to run ?** | **Author** |
+|----------|---------|------------
+|Css | |
+|Bootstrap | |
+|Html |  |
+|Api-Server||   
 
 ~~~css
 .button { border: none; }
 ~~~
 
 
-| What's used in this app ? | How to run ? |
+|  | |
 | ----------- | ----------- |
 | Javascript | open index.html with Go Live in vs code|
-|Css | |
-|Bootstrap | |
-|Html |  |
-|Api-Server||
+
 | What's used in this app ? | How to run ? |
 
 
