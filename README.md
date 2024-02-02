@@ -1,9 +1,9 @@
 # Synchronous-Asynchronous-Programming
 
- **What's used in this app ?** | ** How to run ?** | **Author** |
+ **What's used in this app ?** | **How to run ?** | **Author** |
 |----------|---------|------------
 |Css | Once you clone the project|[Take a look at my other projects]()|
-|Bootstrap | open index.html with Go Live in vs cod|Visit me on Linkedin|
+|Bootstrap | open index.html with Go Live in vs cod|[Visit me on Linkedin]()|
 |Html |  |
 |Api-Server||   
 
