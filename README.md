@@ -6,6 +6,8 @@
 |Bootstrap | |
 |Html |  |
 |Api-Server||   
+||Once you clone the project|
+||open index.html with Go Live in vs cod|
 
 ~~~css
 .button { border: none; }
