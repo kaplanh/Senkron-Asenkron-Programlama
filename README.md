@@ -1,7 +1,7 @@
 # Synchronous-Asynchronous-Programming
 **How does my project look**
 
-[Click Me!](https://kaplanh.github.io/Synchronous-Asynchronous-Programming/)
+[Live link!](https://kaplanh.github.io/Synchronous-Asynchronous-Programming/)
 
 ![Video_240201005720](https://github.com/kaplanh/Synchronous-Asynchronous-Programming/assets/101884444/96410212-c860-4320-a0c7-d54dd0a67b62)
 
@@ -26,25 +26,37 @@ Synchronous-Asynchronous-Programming(folder)
 |
 |----readme.md                        
 |----index.html
-|----checkout.js
 |----img (folder)
-|----css (folder)
-     |----index.css
-     |----checkout.css
-     |----universal.css
-
+|----style.css
+|----1-intro.js
+|----2-promise.js
+|----3-fetchAPI.js
+|----4-async-await.js
 ```
 
 ### At the end of the project, the following topics are to be covered;
 
 - HTML
-  - select
-  - strong
-  - del
-   ```
-
- - CSS
+- CSS
  - Nested CSS
+   ~~~css
+          .card {
+              & img {
+                  transition: 0.5s;
+              }
+          
+              & img:hover {
+                  rotate: 10deg;
+                  scale: 1.02;
+              }
+              & .btn {
+                  transition: scale 0.2s;
+              }
+              & .btn:hover {
+                  scale: 1.03;
+              }
+          }
+~~~
  - text-decoration: line-through
  ```
     .nav__list--btn {
@@ -143,9 +155,7 @@ Synchronous-Asynchronous-Programming(folder)
 
 
 
-~~~css
-.button { border: none; }
-~~~
+
 
 
 ## Feedback and Collaboration
