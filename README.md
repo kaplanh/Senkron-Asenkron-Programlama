@@ -9,10 +9,11 @@
 
  **What's used in this app ?** | **How to run ?** | **Author** |
 |----------|---------|------------
-|Css | Once you clone the project|[Take a look at my other projects]()|
-|Bootstrap | open index.html with Go Live in vs cod|[Visit me on Linkedin]()|
-|Html |  |
-|Api-Server||   
+|Api-Server | Once you clone the project|[Take a look at my other projects]()|
+|Html| open index.html with Go Live in vs cod|[Visit me on Linkedin]()|
+|Css||   
+|Javascript |  |
+|Bootstrap ||   
 
 **What is this project about ?**
 - In this project user can get any current country detail from certain api-server and can find a link which takes the user google map.
