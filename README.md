@@ -1,10 +1,11 @@
 # Synchronous-Asynchronous-Programming
 **How does my project look**
 
+![Video_240201005720](https://github.com/kaplanh/Synchronous-Asynchronous-Programming/assets/101884444/96410212-c860-4320-a0c7-d54dd0a67b62)
 
 
 [Click Me!](https://kaplanh.github.io/Synchronous-Asynchronous-Programming/)
-![image](https://github.com/kaplanh/Synchronous-Asynchronous-Programming/assets/101884444/37e49132-4cc1-4bb6-855f-2bc7383166cb)
+
  **What's used in this app ?** | **How to run ?** | **Author** |
 |----------|---------|------------
 |Css | Once you clone the project|[Take a look at my other projects]()|
