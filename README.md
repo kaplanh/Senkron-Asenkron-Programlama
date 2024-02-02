@@ -36,10 +36,13 @@ Synchronous-Asynchronous-Programming(folder)
 
 ### At the end of the project, the following topics are to be covered;
 
+- API's
+  - [Github followers API](https://api.github.com/users)
+  - [newsAPI](https://newsapi.org/)
 - HTML
 - CSS
  - Nested CSS
-   ~~~css
+     ~~~css
           .card {
               & img {
                   transition: 0.5s;
@@ -56,106 +59,254 @@ Synchronous-Asynchronous-Programming(folder)
                   scale: 1.03;
               }
           }
-~~~
- - text-decoration: line-through
- ```
-    .nav__list--btn {
-    color: orangered;
-    font-size: 14px;
-    cursor: pointer;
-
-    & i:hover {
-        color: white;
-        border-radius: 50%;
-        background-color: #ff7623;
-    }
-    }
-
-.line-through {
-    text-decoration: line-through;
-}
+     ~~~
+  
+  - JS
+     - senkron programing
+       ```
+       console.log("Hello")
+       alert("Blocked") //? Blocking
+       console.time("gecikme")
+       delay(4000) //? blocking code - senkron
+       console.timeEnd("gecikme")
+       console.log("hi")
+       ```
+        - Asenkron (setTimeout()) programing
+          ```
+           setTimeout(() => {
+          console.log("I am fine")
+          console.timeEnd("timer")
+          }, 1000)
+          
+          setTimeout(() => {
+             console.log("Whats up?")
+              console.timeEnd("timer")
+           }, 1000)
+          
+           console.log("start")
+           console.time("timer")
+             ```
+        -  Asenkron (setInterval, clearInterval) programing
+             ```
+            /? setInterval periyodik zaman araligi oluşturmak icin kullanilabilir.
+            //? clearInterval yardımıyla surekli devam interval pasif hale getirilir.
+            let count = 0
+            const sec1 = setInterval(() => {
+              console.log(++count)
+              if (count > 9) {
+                clearInterval(sec1)
+               }
+            }, 1000)
+              ```
+       - Callback Hell (nested ve birbirine bagli callback'ler)
    
-   ```
+              ```
+                  setTimeout(() => {
+                  console.log("john:Hi");
+                  setTimeout(() => {
+                      console.log("Sarah: Hello");
+                      setTimeout(() => {
+                          console.log("John: How Are you?");
+                          setTimeout(() => {
+                              console.log("Sarah:Fine and you?");
+                          }, 1000);
+                      }, 1000);
+                  }, 1000);
+              }, 1000);
+              ```
+         - Promise()
+            ```
+                 const networkReq = new Promise((resolve, reject) => {
+                  const data = { a: 1, b: 2 };
+                  const success = Math.floor(Math.random() * 5); //? (0,1,2,3,4)
+                  if (success) {
+                      console.log("Data fetched");
+                      resolve(data);
+                  } else {
+                      reject("Ohh no there is network error");
+                  }
+              });
+              
+              networkReq
+                  .then((response) => console.log(response))
+                  .then(() => console.log("2. then"))
+                  .catch((err) => document.write(err))
+                  .finally(() => console.log("Her zaman calisir"));
+              ```
+        - fetch API
+              ```   
 
-  
-  
-- JS
+                  let veri = "";
+                   fetch("https://api.github.com/users")
+                     .then((res) => {
+                         //! Error handling
+                         if (!res.ok) {
+                             throw new Error("Something went wrong", res.status);
+                             // console.log("Something went wrong")
+                         } else {
+                             return res.json();
+                         }
+                     })
+                     .then((data) => {
+                         // veri = data
+                         // console.log(veri)
+                         showUsers(data);
+                     })
+                     .catch((err) => {
+                         console.log(err);
+                         const usersDiv = document.getElementById("users");
+                         usersDiv.innerHTML = `<h2 class="text-warning">${err}</h2>`;
+                     });
+                 
+                 // console.log(veri)
+                 
+                 const showUsers = (users) => {
+                     console.log(users);
+                     const usersDiv = document.getElementById("users");
+                 
+                     users.forEach((user) => {
+                         // console.log(user.login)
+                         usersDiv.innerHTML += `
+                          <div class="card col" style="width: 15rem;">
+                             <img src="${user.avatar_url}" class="card-img-top img-thumbnail" alt="...">
+                 
+                            <div class="card-body">
+                 
+                             <h5 class="card-title">${user.login}</h5>
+                             <p class="card-text">${user.type + ' ' + user.id}</p>
+                             <a href="${user.html_url}" class="btn btn-primary">Go somewhere</a>
+                 
+                            </div>
+                 
+                        </div>
+                     `;
+                     });
+                 };
+               ```
+          -  async-await
+             ```
+                const getNews = async () => {
+                 const API_KEY = "2108f1dba8114b89b4a326fc6f71a5a8";
+                 const URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
+             
+                 try {
+                     const res = await fetch(URL);
+                     // console.log(res);
+                     //?Error handling
+                     if (!res.ok) {
+                         throw new Error("News can not be fetched");
+                     }
+                     const data = await res.json();
+                     renderNews(data.articles);
+                 } catch (err) {
+                     // console.log(error);
+                     renderError(err);
+                 }
+             };
+             
+             const renderNews = (news) => {
+                 const newsDiv = document.getElementById("news");
+
+              news.map((item) => {
+                  const { title, content, url, urlToImage } = item; //? destructure
+                  newsDiv.innerHTML += `
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="card">
+                      <img src="${urlToImage}" class="card-img-top img-thumbnail" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">${title}</h5>
+                          <p class="card-text">${content}</p>
+                          <a href="${url}" target="_blank" class="btn btn-danger">Go Detail</a>
+                      </div>
+                  </div>
+              </div>
+   
+                       `;
+                       });
+                   };
+                   const renderError = (err) => {
+                       const newsDiv = document.getElementById("news");
+                       newsDiv.innerHTML = `
+                       <h3>${err}</h3>
+                       <img src="./img/404.png" alt="404" />
+                     `;
+                   };
+                   
+                   window.addEventListener("load", () => {
+                       getNews();
+                   });
+              ```
+      
+  - 
   - DOM Manipulations
     - innerHTML
     - innerText
     - textContent
      
   - DOM Selectors
-  - querySelector
-  - querySelectorAll
-  - const productList = document.querySelector("div.main__product-painel"); //?basina div yazarak belirtirsek performans acisindan daha hizli olur
     
   - Events
     - click
     - load
-  
-  -e.target & e.currentTarget
-    ```
-         e.currentTarget.firstElementChild.innerText = "My Cart";
-        //? NOT:e.target tiklanan elementi verirken e.currentTarget sabittir ve addEventListener in tanimlandigi elemandir burda navbarList  ve daha hizlidir
-    ```
-  - Capturing & Bubbling
-  - DOM Traversing
-    - nextElementSibling
-    - e.target.closest(".main__product-info"
-    - if (e.target.classList.contains("fa-plus"))
-    - e.target.previousElementSibling.innerText++;
-    - firstElementChild
-    - children
-   
-  - localStorage & sessionStorage
+ 
  
   
   - Array Methods
-  - forEach() & reducer()
+  - forEach() &  map()
+
      ```
-    productTotalPriceDivs.forEach(eachProductTotalPriceDiv => {
-        subtotal += parseFloat(eachProductTotalPriceDiv.innerText)
-    });
+             const showUsers = (users) => {
+              console.log(users);
+              const usersDiv = document.getElementById("users");
+          
+              users.forEach((user) => {
+                  // console.log(user.login)
+                  usersDiv.innerHTML += `
+                   <div class="card col" style="width: 15rem;">
+                      <img src="${user.avatar_url}" class="card-img-top img-thumbnail" alt="...">
+          
+                     <div class="card-body">
+          
+                      <h5 class="card-title">${user.login}</h5>
+                      <p class="card-text">${user.type + ' ' + user.id}</p>
+                      <a href="${user.html_url}" class="btn btn-primary">Go somewhere</a>
+          
+                     </div>
+          
+                 </div>
+              `;
+              });
+          };
+       ```
+
+
+
+
+
+     ```
+            const renderNews = (news) => {
+            const newsDiv = document.getElementById("news");
+        
+            news.map((item) => {
+                const { title, content, url, urlToImage } = item; //? destructure
+                newsDiv.innerHTML += `
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="${urlToImage}" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${title}</h5>
+                        <p class="card-text">${content}</p>
+                        <a href="${url}" target="_blank" class="btn btn-danger">Go Detail</a>
+                    </div>
+                </div>
+            </div>
+           
+            `;
+            });
+        };
+            });
     ```
  
-      ```
-    reduce()
-    const subTotalAlternatif = [...productPriceDivs]; //reduce icin array a dönüstürmeliyiz
-    let subtotal = subTotalAlternatif.reduce((acc, curr) => {
-        return acc + parseFloat(curr.innerText); //parseFloat  stringten float yapar
-    }, 0);
-
-    ```
-  
-  - parseFloat
-    ```
-    const taxPrice = parseFloat(subtotal * localStorage.getItem("taxRate")); parseFloat  stringten float yapar
-
-    ```
-
-  
-  - if else - if - else  conditions
-  - Ternary
-    ```
-    let shipping = (subtotal > 0 ? parseFloat(localStorage.getItem("shippingPrice")) : 0);
-
-    ```
- 
- 
-     
-
-  - String Methods( toFixed() )
-   ```
-   productTotalPriceDiv.innerText = (productQuantity * productPrice).toFixed(2);
-  ```
-
-
-
-
-
-
-
 
 
 ## Feedback and Collaboration
