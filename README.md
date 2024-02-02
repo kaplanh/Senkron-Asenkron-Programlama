@@ -2,12 +2,11 @@
 
  **What's used in this app ?** | ** How to run ?** | **Author** |
 |----------|---------|------------
-|Css | |
-|Bootstrap | |
+|Css | |Once you clone the project|
+|Bootstrap | open index.html with Go Live in vs cod|
 |Html |  |
 |Api-Server||   
-||Once you clone the project|
-||open index.html with Go Live in vs cod|
+
 
 ~~~css
 .button { border: none; }
